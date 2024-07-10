@@ -9,7 +9,8 @@ export const GlobalStyle = createGlobalStyle`
     --title_bold : #2E2E2E;
     --subtitle_silver: #6C6C6C;
     --highLight: #9900CC;
-    --transparnt_highLight:#9900CC30; 
+    --highLightDarken: ${darken(0.05,'#9900CC')};;
+    --transparent_highLight:#9900CC30; 
     --button_primary:#33CC95;
     --button_primary_darken: ${darken(0.03,'#33CC95')};
     --text_button_primary: #FFF;
@@ -30,6 +31,7 @@ button{
   text-decoration: none;
   border: none;
   background: none;
+  font-family: "Work Sans", sans-serif;;
 }
 
 [disabled]{
