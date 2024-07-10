@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Animationpulsate } from "./animations";
+import { Animationpulsate } from "./animations/animationsStyles";
 
 export const OutLineButton = styled.button `
     background-color: var(--button_outline_bg);

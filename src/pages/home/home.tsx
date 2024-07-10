@@ -1,4 +1,5 @@
 import { DetailsSpan } from '../../components/Home/DetailsSpan/detailsSpan'
+import { Footer } from '../../components/Home/Footer/footer'
 import { ButtonPrimary, FilledButton, OutLineButton } from '../../components/buttons'
 import * as S from './style'
 
@@ -22,9 +23,15 @@ export const Home = () => {
                 <img
                     style={{ maxWidth: '100%', marginBottom: '-5px' }}
                     src='https://www-cms.pipedriveassets.com/cdn-cgi/image/quality=70,format=auto/https://www-cms.pipedriveassets.com/brand-half-page-illustrations/LOCALIZED-HP-ILLUSTRATIONS/Homepage-revamp-2029-PT.png' />
+
+                <DetailsSpan />
+
                 <S.SectionAbout>
-                    <DetailsSpan></DetailsSpan>
+                    Pare de sofrer com sistemas antigos e lentos, tudo que você precisa está aqui
                 </S.SectionAbout>
+
+                <Footer/>
+
             </S.Main>
         </S.Container>
     )

@@ -1,4 +1,4 @@
-import { css } from 'styled-components';
+import { css, styled } from 'styled-components';
 
 
 export const AnimationFadeInBottom = css`
@@ -63,5 +63,11 @@ export const Animationpulsate = css`
   }
 }
 
-
 `
+
+export const FadeInDiv = styled.div`
+  opacity: 0;
+  &.visibleFadeIn {
+    ${AnimationFadeInBottom}
+  }
+`;

@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     --button_primary_darken: ${darken(0.03,'#33CC95')};
     --text_button_primary: #FFF;
     --button_outline_bg: #fff;
+    --footer: #282828;
 }
 
 html {
