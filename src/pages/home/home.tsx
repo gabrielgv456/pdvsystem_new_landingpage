@@ -3,6 +3,7 @@ import { Footer } from '../../components/Home/Footer/footer'
 import { FirstAdvantange } from '../../components/Home/advantanges/firstAdvantange/firstAdvantange'
 import { SecondAdvantange } from '../../components/Home/advantanges/secondAdvantange/secondAdvantange'
 import { ThirdAdvantange } from '../../components/Home/advantanges/thirdAvantange/thirdAdvantange'
+import { Faq } from '../../components/Home/faq/faq'
 import { ButtonPrimary, FilledButton, OutLineButton } from '../../components/buttons'
 import * as S from './style'
 
@@ -35,8 +36,10 @@ export const Home = () => {
                     <SecondAdvantange />
                     <ThirdAdvantange />
                 </S.SectionAdvantages>
+                <div style={{height:'600px',backgroundColor:'rgb(237, 231, 246)'}}>
 
-
+                </div>
+                <Faq/>
                 <Footer />
 
             </S.Main>
