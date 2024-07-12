@@ -38,8 +38,13 @@ export const SectionHighLight = styled.section`
    padding-bottom: 1rem;
 `
 
-export const SectionAbout = styled.section`
-    height: 50rem;
+export const SectionAdvantages = styled.section`
+    padding: 3rem 0 3rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+    height: max-content
 
 `
 
@@ -50,6 +55,13 @@ export const TitleH1 = styled.h1 `
     width: 65%;
     text-align: center;
     ${AnimationFadeInBottom};
+`
+export const TitleH2 = styled.h2 `
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--title_bold);
+    width: 65%;
+    text-align: center;
 `
 
 export const SubtitleSection = styled.section `

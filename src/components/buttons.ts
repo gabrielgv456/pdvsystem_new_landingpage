@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled, { CSSProperties } from "styled-components";
 import { Animationpulsate } from "./animations/animationsStyles";
 
-export const OutLineButton = styled.button `
+export const OutLineButton = styled.button`
     background-color: var(--button_outline_bg);
     border-radius: 5px;
     border: 3px solid var(--highLight);
@@ -15,13 +15,19 @@ export const OutLineButton = styled.button `
         background-color: var(--transparent_highLight);
     }
 `
+type PropsFilledButton = {
+    width?: number
+    height?:number
+    fontSize?: number
+};
 
-export const FilledButton = styled.button `
+export const FilledButton = styled.button <PropsFilledButton> `
     background-color: var(--highLight);
     border-radius: 5px;
     padding: 0.8rem 0.8rem 0.8rem 0.8rem;
-    font-size: 1.2rem;
-    width: 120px;
+    font-size: ${props => props.fontSize ? props.fontSize + 'rem' : '1.2rem' } ;
+    height: ${props => props.height + 'px'};
+    width: ${props => props.width  ? props.width + 'px' : '120px'} ;
     font-weight: 500;
     color: var(--background);
     transition: background-color 0.5s ease;
@@ -30,7 +36,7 @@ export const FilledButton = styled.button `
     }
 `
 
-export const ButtonPrimary = styled.button `
+export const ButtonPrimary = styled.button`
     background-color: var(--button_primary);
     border-radius: 5px;
     padding: 1rem;

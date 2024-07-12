@@ -1,5 +1,8 @@
 import { DetailsSpan } from '../../components/Home/DetailsSpan/detailsSpan'
 import { Footer } from '../../components/Home/Footer/footer'
+import { FirstAdvantange } from '../../components/Home/advantanges/firstAdvantange/firstAdvantange'
+import { SecondAdvantange } from '../../components/Home/advantanges/secondAdvantange/secondAdvantange'
+import { ThirdAdvantange } from '../../components/Home/advantanges/thirdAvantange/thirdAdvantange'
 import { ButtonPrimary, FilledButton, OutLineButton } from '../../components/buttons'
 import * as S from './style'
 
@@ -26,11 +29,15 @@ export const Home = () => {
 
                 <DetailsSpan />
 
-                <S.SectionAbout>
-                    Pare de sofrer com sistemas antigos e lentos, tudo que você precisa está aqui
-                </S.SectionAbout>
+                <S.SectionAdvantages>
+                    <S.TitleH2>Pare de perder tempo com sistemas antigos e lentos, tudo que você precisa está aqui</S.TitleH2>
+                    <FirstAdvantange />
+                    <SecondAdvantange />
+                    <ThirdAdvantange />
+                </S.SectionAdvantages>
 
-                <Footer/>
+
+                <Footer />
 
             </S.Main>
         </S.Container>

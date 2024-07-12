@@ -4,14 +4,14 @@ import { BsGraphUpArrow } from "react-icons/bs";
 import { FaHandHoldingUsd } from "react-icons/fa";
 import { MdWorkspacePremium } from "react-icons/md";
 import { IoStorefrontOutline } from "react-icons/io5";
-import FadeInComponent from '../../animations/animations';
+import { FadeInComponent } from '../../animations/animations';
 
 
 export const DetailsSpan = () => {
     return (
 
         <S.Container>
-            <FadeInComponent>
+            <FadeInComponent type='bottom'>
                 <S.Content>
                     <S.DivSpan>
                         <MdWorkspacePremium size={30} />
