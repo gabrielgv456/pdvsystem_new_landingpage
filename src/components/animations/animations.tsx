@@ -4,8 +4,11 @@ import useIntersectionObserver from '../../hooks/useInterSectionObserver';
 
 interface FadeInComponentProps {
   children: ReactNode;
-  type: 'bottom' | 'left' | 'right'
+  type: FadeInType
 }
+
+export type FadeInType = 'bottom' | 'left' | 'right'
+
 
 export const FadeInComponent: React.FC<FadeInComponentProps> = ({ children, type }) => {
   const [ref, isVisible] = useIntersectionObserver({ threshold: 0.2 });

@@ -21,10 +21,10 @@ export const Accordion: React.FC<AccordionProps> = ({ items }) => {
   return (
     <S.AccordionSection>
       {items.map((item, index) => (
-        <S.AccordionItemWrapper key={index}>
-          <S.AccordionHeader onClick={() => toggleAccordion(index)}>
+        <S.AccordionItemWrapper key={index} isOpen={openIndex === index}>
+          <S.AccordionHeader onClick={() => toggleAccordion(index)}  isOpen={openIndex === index}>
             {item.title}
-            <IoIosArrowDown/>
+            <IoIosArrowDown size={25}/>
           </S.AccordionHeader>
           <S.AccordionContent isOpen={openIndex === index}>
             {item.content}

@@ -7,23 +7,28 @@ export const AccordionSection = styled.div`
   font-size: 1.4rem;
 `;
 
-export const AccordionItemWrapper = styled.div`
+export const AccordionItemWrapper = styled.div<{ isOpen: boolean }>`
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
   overflow: hidden;
-  height: 80px;
+  height: ${(props) => (props.isOpen ? 'auto' : '80px')};
 `;
 
-export const AccordionHeader = styled.div`
+export const AccordionHeader = styled.div<{ isOpen: boolean }>`
   display: flex;
   justify-content: space-between;
   padding: 10px;
   cursor: pointer;
+  color: ${props => props.isOpen ?  'var(--highLight)' : ''};
 `;
 
 export const AccordionContent = styled.div<{ isOpen: boolean }>`
-  padding: 0px;
+  margin: 0 auto;
+  width: 90%;
+  font-size: 1rem;
+  padding: 10px;
   height: ${(props) => (props.isOpen ? 'auto' : '0')};
   overflow: hidden;
+  display: ${props => props.isOpen ? '' : 'none'};
   transition: height 0.3s ease;
 `;

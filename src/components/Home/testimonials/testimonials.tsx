@@ -1,3 +1,4 @@
+import { FadeInComponent } from '../../animations/animations'
 import { LightButton } from '../../buttons'
 import { PSubtitle, TitleH2 } from '../../titles'
 import * as S from './style'
@@ -11,19 +12,21 @@ type testimonialsDataType = {
 
 const Testimonial = ({ functionClient, nameClient, srcImage, testimonial }: testimonialsDataType) => {
     return (
-        <S.TestimonialContainer>
-            <div>
-                <S.QuoteIcon size={30} />
-                <PSubtitle>{testimonial}</PSubtitle>
-            </div>
-            <S.DivCustomer>
-                <S.ImgCustomer src={srcImage} />
-                <S.SpanCustumer>
-                    <b>{nameClient}</b>
-                    {functionClient}
-                </S.SpanCustumer>
-            </S.DivCustomer>
-        </S.TestimonialContainer>
+        <FadeInComponent type='right'>
+            <S.TestimonialContainer>
+                <div>
+                    <S.QuoteIcon size={30} />
+                    <PSubtitle>{testimonial}</PSubtitle>
+                </div>
+                <S.DivCustomer>
+                    <S.ImgCustomer src={srcImage} />
+                    <S.SpanCustumer>
+                        <b>{nameClient}</b>
+                        {functionClient}
+                    </S.SpanCustumer>
+                </S.DivCustomer>
+            </S.TestimonialContainer>
+        </FadeInComponent>
     )
 }
 

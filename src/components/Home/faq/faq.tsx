@@ -1,4 +1,5 @@
 import { Accordion, AccordionItem } from '../../Accordion/Accordion'
+import { FadeInComponent } from '../../animations/animations'
 import { TitleH2 } from '../../titles'
 import * as S from './style'
 
@@ -87,12 +88,14 @@ export const Faq = () => {
     ]
 
     return (
-        <S.Container>
-            <TitleH2 textAlign='center'>Perguntas Frequentes</TitleH2>
-            <S.SectionFaqs>
-                <Accordion items={faqItens.slice(0, 10)} />
-                <Accordion items={faqItens.slice(11, 21)} />
-            </S.SectionFaqs>
-        </S.Container>
+        <FadeInComponent type='bottom'>
+            <S.Container>
+                <TitleH2 textAlign='center'>Perguntas Frequentes</TitleH2>
+                <S.SectionFaqs>
+                    <Accordion items={faqItens.slice(0, 10)} />
+                    <Accordion items={faqItens.slice(11, 21)} />
+                </S.SectionFaqs>
+            </S.Container>
+        </FadeInComponent>
     )
 }
