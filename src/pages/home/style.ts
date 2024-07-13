@@ -48,22 +48,6 @@ export const SectionAdvantages = styled.section`
 
 `
 
-export const TitleH1 = styled.h1 `
-    font-size: 40px;
-    font-weight: 600;
-    color: var(--title_bold);
-    width: 65%;
-    text-align: center;
-    ${AnimationFadeInBottom};
-`
-export const TitleH2 = styled.h2 `
-    font-size: 35px;
-    font-weight: 600;
-    color: var(--title_bold);
-    width: 65%;
-    text-align: center;
-`
-
 export const SubtitleSection = styled.section `
     width: 75%;
     font-size: 18px;

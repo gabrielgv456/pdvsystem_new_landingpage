@@ -4,7 +4,9 @@ import { FirstAdvantange } from '../../components/Home/advantanges/firstAdvantan
 import { SecondAdvantange } from '../../components/Home/advantanges/secondAdvantange/secondAdvantange'
 import { ThirdAdvantange } from '../../components/Home/advantanges/thirdAvantange/thirdAdvantange'
 import { Faq } from '../../components/Home/faq/faq'
+import { Testimonials } from '../../components/Home/testimonials/testimonials'
 import { ButtonPrimary, FilledButton, OutLineButton } from '../../components/buttons'
+import { TitleH1, TitleH2 } from '../../components/titles'
 import * as S from './style'
 
 export const Home = () => {
@@ -20,7 +22,7 @@ export const Home = () => {
             </S.Header>
             <S.Main>
                 <S.SectionHighLight>
-                    <S.TitleH1>O sistema que <S.highLightText>descomplica</S.highLightText> a gestão do seu négocio proporcionando eficiência e praticidade em todas as áreas</S.TitleH1>
+                    <TitleH1>O sistema que <S.highLightText>descomplica</S.highLightText> a gestão do seu négocio proporcionando eficiência e praticidade em todas as áreas</TitleH1>
                     <S.SubtitleSection>Controle o estoque, acompanhe graficos, relatórios, realização de vendas, controle suas entregas, imprima comprovantes e orçamentos com a personalidade da sua empresa</S.SubtitleSection>
                     <ButtonPrimary>Comece Agora</ButtonPrimary>
                 </S.SectionHighLight>
@@ -31,15 +33,15 @@ export const Home = () => {
                 <DetailsSpan />
 
                 <S.SectionAdvantages>
-                    <S.TitleH2>Pare de perder tempo com sistemas antigos e lentos, tudo que você precisa está aqui</S.TitleH2>
+                    <div style={{ width: '65%' }}>
+                        <TitleH2 textAlign='center'>Pare de perder tempo com sistemas antigos e lentos, tudo que você precisa está aqui</TitleH2>
+                    </div>
                     <FirstAdvantange />
                     <SecondAdvantange />
                     <ThirdAdvantange />
                 </S.SectionAdvantages>
-                <div style={{height:'600px',backgroundColor:'rgb(237, 231, 246)'}}>
-
-                </div>
-                <Faq/>
+                <Testimonials />
+                <Faq />
                 <Footer />
 
             </S.Main>

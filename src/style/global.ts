@@ -10,7 +10,9 @@ export const GlobalStyle = createGlobalStyle`
     --subtitle_silver: #6C6C6C;
     --highLight: #9900CC;
     --highLightDarken: ${darken(0.05,'#9900CC')};;
-    --transparent_highLight:#9900CC30; 
+    --transparent_highLight:#ECCFF5; 
+    --transpartent_highLightDarken: ${darken(0.2,'#ECCFF5')};
+    --light_highLight: #EDE7F6;
     --button_primary:#33CC95;
     --button_primary_darken: ${darken(0.03,'#33CC95')};
     --text_button_primary: #FFF;

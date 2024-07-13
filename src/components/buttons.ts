@@ -36,6 +36,19 @@ export const FilledButton = styled.button <PropsFilledButton> `
     }
 `
 
+export const LightButton = styled.button `
+    border-radius: 5px;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--highLight);
+    background-color: var(--transparent_highLight);
+    transition: background-color 0.5s ease;
+    &:hover{
+        background-color: var(--transpartent_highLightDarken);
+    }
+`
+
 export const ButtonPrimary = styled.button`
     background-color: var(--button_primary);
     border-radius: 5px;
