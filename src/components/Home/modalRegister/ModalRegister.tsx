@@ -35,7 +35,7 @@ export const ModalRegister = ({ isModalOpen, setIsModalOpen }: ModalRegisterProp
     const [dataRegister, setDataRegister] = useState<registerType>({ email: '', masterkey: '', name: '', ownerName: '', password: '', phone: '', confirmPassword: '' })
     const { register } = useApi()
     const [dataValidate, setDataValidate] = useState<validateType>({ codValidate: '', idUser: '' })
-    const [step, setStep] = useState<stepType>('validateMail')
+    const [step, setStep] = useState<stepType>('register')
 
     function handleChangeRegister<T extends keyof registerType>(
         property: T, value: registerType[T]) {
