@@ -2,6 +2,10 @@ import { FadeInComponent } from '../../animations/animations'
 import { LightButton } from '../../buttons'
 import { PSubtitle, TitleH2 } from '../../titles'
 import * as S from './style'
+import Eliana_Alves_Rocha from '../../../assets/images/Eliana_Alves_Rocha.jpg'
+import Luiz_Henrique_Rodrigues from '../../../assets/images/Luiz_Henrique_Rodrigues.jpg'
+import Otavio_Arantes from '../../../assets/images/Otavio_Arantes.jpg'
+import { modalRegisterType } from '../../../pages/home/interfaces'
 
 type testimonialsDataType = {
     testimonial: string
@@ -9,6 +13,7 @@ type testimonialsDataType = {
     nameClient: string
     functionClient: string
 }
+
 
 const Testimonial = ({ functionClient, nameClient, srcImage, testimonial }: testimonialsDataType) => {
     return (
@@ -32,38 +37,38 @@ const Testimonial = ({ functionClient, nameClient, srcImage, testimonial }: test
 
 
 
-export const Testimonials = () => {
+export const Testimonials = ({ setIsModalRegisterOpen }: modalRegisterType) => {
 
     const testimonialsData: testimonialsDataType[] = [
         {
-            nameClient: 'Edson',
-            functionClient: 'Dono',
-            srcImage: 'https://www-cms.pipedriveassets.com/testimonial-images/eden-brownlee.jpg',
+            nameClient: 'Otávio Arantes',
+            functionClient: 'Gerente Operacional',
+            srcImage: Otavio_Arantes,
             testimonial: 'Desde que usamos o Safyra, nossa gestão ficou muito mais eficiente e prática. Recomendo a todos os pequenos empresários!'
         },
         {
-            nameClient: 'Alexa Lenon',
-            functionClient: 'CEO da empresa top',
-            srcImage: 'https://www-cms.pipedriveassets.com/testimonial-images/Jana-Hodbodova.jpg',
+            nameClient: 'Eliana Alves Rocha',
+            functionClient: 'CEO',
+            srcImage: Eliana_Alves_Rocha,
             testimonial: 'O Safyra nos proporciona relatórios detalhados que ajudam a tomar decisões rápidas. Suporte incrível!'
         },
         {
-            nameClient: 'Oliver Tomas',
-            functionClient: 'Socio Proprietario da Ednis',
-            srcImage: 'https://www-cms.pipedriveassets.com/testimonial-images/Oliver-Lee.jpg',
+            nameClient: 'Luiz Henrique Rodrigues',
+            functionClient: 'Sócio Proprietário',
+            srcImage: Luiz_Henrique_Rodrigues,
             testimonial: 'O sistema facilitou nossa gestão de vendas e clientes. Agora acompanhamos tudo em tempo real!'
         }
     ]
 
     return (
-        <S.Container>
+        <S.Container id='testimonials'>
             <S.DivLeft>
-                <TitleH2 textAlign='left'>Veja como o Safyra ajuda pequenas empresas a crescer</TitleH2>
-                <LightButton>Quero fazer parte</LightButton>
+                <TitleH2 >Veja como o Safyra ajuda pequenas empresas a crescer</TitleH2>
+                <LightButton onClick={() => setIsModalRegisterOpen(true)}>Quero fazer parte</LightButton>
             </S.DivLeft>
             <S.DivRight>
-                {testimonialsData.map(item => (
-                    <Testimonial {...item} />
+                {testimonialsData.map((item, index) => (
+                    <Testimonial {...item} key={index} />
                 ))}
             </S.DivRight>
         </S.Container>

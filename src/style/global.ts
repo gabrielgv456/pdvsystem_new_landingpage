@@ -18,6 +18,7 @@ export const GlobalStyle = createGlobalStyle`
     --text_button_primary: #FFF;
     --button_outline_bg: #fff;
     --footer: #282828;
+    --background_input: #E9E9F2;
 }
 
 html {

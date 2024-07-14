@@ -18,3 +18,7 @@ export const SubtitleSection = styled.section `
     text-align: center;
 `
 
+export const PrincipalImage = styled.img`
+    max-width: 100%; 
+    margin-bottom: -5px;
+`

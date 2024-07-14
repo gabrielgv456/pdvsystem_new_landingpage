@@ -1,4 +1,4 @@
-import styled, { CSSProperties } from "styled-components";
+import styled from "styled-components";
 import { Animationpulsate } from "./animations/animationsStyles";
 
 export const OutLineButton = styled.button`
@@ -63,5 +63,8 @@ export const ButtonPrimary = styled.button`
     &:hover{
         background-color: var(--button_primary_darken);
         animation: none;
+    }
+    @media screen and (max-width:600px){
+        width: 70%;
     }
 `

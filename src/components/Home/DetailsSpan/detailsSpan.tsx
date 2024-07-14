@@ -10,12 +10,12 @@ import { FadeInComponent } from '../../animations/animations';
 export const DetailsSpan = () => {
     return (
 
-        <S.Container>
+        <S.Container id='advantages'>
             <FadeInComponent type='bottom'>
                 <S.Content>
                     <S.DivSpan>
                         <MdWorkspacePremium size={30} />
-                        <S.Title>Facilite a Gestão do Seu Negócio com Nosso PDV Online</S.Title>
+                        <S.Title>Facilite a Gestão do Seu Negócio com Nosso Sistema Online</S.Title>
                         Simplifique as operações diárias e melhore a eficiência do seu estabelecimento.
                     </S.DivSpan>
                     <DegradeSeparator />
@@ -27,14 +27,14 @@ export const DetailsSpan = () => {
                     <DegradeSeparator />
                     <S.DivSpan>
                         <BsGraphUpArrow size={30} />
-                        <S.Title>Aumente Suas Vendas com Nosso Sistema PDV Online</S.Title>
+                        <S.Title>Aumente Suas Vendas com Nosso Sistema Online</S.Title>
                         Ofereça uma experiência de compra rápida e eficiente para seus clientes.
                     </S.DivSpan>
                     <DegradeSeparator />
                     <S.DivSpan>
                         <IoStorefrontOutline size={30} />
                         <S.Title>Soluções de Ponto de Venda Perfeitas para Pequenas Empresas</S.Title>
-                        Transforme a forma como você gerencia seu negócio com nosso sistema PDV fácil de usar.
+                        Transforme a forma como você gerencia seu negócio com nosso sistema fácil de usar.
                     </S.DivSpan>
                 </S.Content>
             </FadeInComponent>

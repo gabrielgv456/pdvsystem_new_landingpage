@@ -12,11 +12,14 @@ export const DivInfo = styled.div`
     display: flex;
     flex-direction: column;
     width: 500px;
+    gap:15px;
     @media screen and (max-width:600px){
         width: 250px;
     }
 `
 export const Image = styled.img `
+    width: 500px;
+    max-height: auto;
      @media screen and (max-width:600px){
         width: 250px;
     }

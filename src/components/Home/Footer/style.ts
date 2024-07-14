@@ -31,10 +31,15 @@ export const DivContent = styled.div`
     display: flex;
     gap:30px;
     flex-wrap: wrap;
-    @media screen and (max-width:800px){
+    @media screen and (max-width:1050px){
         justify-content: center;
     }
 `
+export const UlSections = styled.ul`
+    margin: 0;
+    padding: 0;
+`
+
 export const liSections = styled.li`
     text-align: left;
     font-size: 1.1rem;
@@ -48,6 +53,8 @@ export const liSections = styled.li`
 `
 export const GoTo= styled.a`
    cursor: pointer;
+   text-decoration: none;
+   color: inherit;
    &:hover{
     color: var(--highLight)
    }

@@ -1,0 +1,1 @@
+export const URL_CUSTUMER_AREA = 'https://sistema.safyra.com.br'
